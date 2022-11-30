@@ -2,19 +2,19 @@
     Cloud Functions is an event-driven serverless computer platform. They can subscribe to events across a suite of cloud service and trigger based on those changes.
 
 ## Steps to configure
+     
+- In the Google Cloud console, go to the Cloud Storage Buckets page. Go to Buckets.
+- Click Create bucket.
+- On the Create a bucket page, enter your bucket information.
+- In the Google Cloud search -> Cloud Function -> function name
+- Trigger Type -> Cloud Storage
+- Select -> correct bucket
+- Event Type: Select -> On(finalizing/creating) file in the selected bucket
+- Cloud Functions -> Configuration -> Runtime -> python3.8
+- Add code to  main.py
+- Update the code based on the requirement and then select “Deploy”. This will save the configuration
 
-    •	Login to google cloud console.
-    •	Create a project give a name and search for the topic and create the  “Topic”.
-    •   select Cloud Functions -> serverless.
-    •	search  and select ""topic" ->  in the dialog " enter the topic name".
-    •	Once the topic has been created search for “Logs Router”, this will let you to create Sinks.  Sinks controls how Cloud Logging routes logs. Using “Sink” you can route some or all logs to the supported destinations.
-    •	Select pub/sub is used to integrate  asynchronous service-to-services.
-    •	The selected Code level is Python 3.8.
-    •	Update the code based on the requirement and then select “Deploy”. This will save the configuration.
 
-##  Flow Chart
-
-            ![Log Routing](image/Log-Routing-Sink.png)
 
 ## Setup function to transfer events  log to Logscale:
 
