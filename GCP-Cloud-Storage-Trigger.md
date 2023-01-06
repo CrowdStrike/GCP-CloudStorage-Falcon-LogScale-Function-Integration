@@ -20,12 +20,12 @@
 
 ##  Diagram below outlines the basic architechture 
    
-![Process](image/(google-cloud-function.png)
+![Process](image/google-cloud-function.png)
 
 ##  How to configure bucket and setup funtion 
 
 
-![Process1](image/(image/create-bucket.png)
+![Process1](image/create-bucket.png)
 
 ## list and  Select bucket
 ![Process.b](image/trigger-bucket-name-audit-log-gcp-bucket.png)
@@ -35,7 +35,7 @@
 
 ![Process1a](image/trigger-bucket-name-audit-log-gcp-bucket.png)
 
-![Process2](image/image/create-new-function.png) 
+![Process2](image/create-new-function.png) 
 
 #  Select Cloud Function and then select python3.8 in Runtime
 
@@ -80,16 +80,6 @@ def hello_gcs(event, context):
          print(lineContent)
 
 
-    ############Network call start
-    #URL for http POST request (for REST API)
-    url = 'https://httpxxxxxxxx/post [httpbin.org]'
-    # request payload (the input to the server)
-    myobj = {'somekey': 'somevalue'}
-    #REST CALL to server
-    x = requests.post [requests.post](url, json = myobj)
-    #get the response back from server and print
-    print(x.text)
-    ##########Network call end
     print(f"Processing file completed: {file['name']}."
 
 
